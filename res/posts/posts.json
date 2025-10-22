@@ -52,5 +52,11 @@
     "date": "Sep 13, 2025",
     "picture": "",
     "content": "I code my frontend in C. Anyone else?"
+  },
+  {
+    "userName": "Natalie Stern",
+    "date": "Sep 14, 2025",
+    "picture": "https://imgs.search.brave.com/ybCZuLmHHiIie1YZ44e-HZSORZ-qb69Y_RMxKlUlGG0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/YnJpdGFubmljYS5j/b20vMzMvMTM2MTMz/LTAwNC0zMzg1RjZG/NS9nb2xkZW4tcmV0/cmlldmVyLmpwZw",
+    "content": "I love my dog!"
   }
 ]
