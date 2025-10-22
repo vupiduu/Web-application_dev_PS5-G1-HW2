@@ -1,0 +1,76 @@
+.stage {
+    min-height: calc(100vh - 72px);
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    padding: 24px;
+}
+
+.plane {
+    min-height: calc(100vh - 56px); /* täisekraan miinus ülariba */
+    display: flex;
+    justify-content: center;        /* horisontaalne keskjoondus */
+    align-items: center;            /* vertikaalne keskjoondus */
+    padding: 24px;
+}
+
+/* Kaart vormiga */
+.card {
+    width: 360px;
+    background: #d9d9d9;            /* helehall paneel */
+    border: 1px solid #c6c6c6;
+    border-radius: 10px;
+    padding: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,.08);
+}
+
+section {
+    min-height: calc(100vh - 56px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    margin: 0;             /* et mitte lükata kaarti alla/ära */
+}
+
+/* Vormigrid: silt vasakul, väli paremal */
+.form .row{
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    align-items: flex-start;        /* top-align both items in the row */
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.form .row label{
+    align-self: flex-start;         /* belt-and-suspenders */
+    line-height: 1.2;
+    margin-top: 2px;           /* tiny nudge so text sits nicely */
+}
+
+.form label { line-height: 1.2; color: #2b2b2b; }
+
+.form textarea {
+    width: 100%;
+    min-height: 110px;
+    padding: 8px;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    background: #fff;
+    color: #111;
+    resize: vertical;
+}
+
+/* Faili valiku hall (mitteaktiivne) */
+input[type="file"][disabled] {
+    opacity: .6;
+    filter: grayscale(100%);
+    cursor: not-allowed;
+    border: 1px solid #cfcfcf;
+    padding: 6px;
+    background: #eee;
+    border-radius: 4px;
+}
+
+/* Nupud */
+#actions { display: flex; justify-content: center; margin-top: 10px; }

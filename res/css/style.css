@@ -1,0 +1,77 @@
+@media (max-width: 430px) {
+    /*Nav config for smartphones */
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*  To center the Links in the nav bar on mobile screen*/
+    .nav ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+}
+@media (min-width: 431px) {
+    /*Nav config for desktops */
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.nav li { display: inline-block;}
+
+.nav a:link{
+    text-decoration: none;
+}
+
+.root {
+    padding: 8px 16px;
+    background-color: #478bac;
+    border: 1px solid #a9a9a9;
+    border-radius: 5px;
+    color: #111;
+    font-weight: bold;
+}
+
+.root:hover {
+    background-color: #5a9ab6;
+    transition: background-color 0.2s;
+}
+.nav {
+    display: flex;
+    list-style: none;
+    border-radius: 15px;
+    background-color: #00aaff;
+    justify-content: space-between;
+    align-items: center;
+}
+/* padding around the icon */
+ul + a {
+    padding: 5px;
+}
+
+/* Avatar paremale (sinu pilt) */
+.logo > img {
+    display: block;
+    border-radius: 25px;
+    border: 2px solid #284f79;
+    background: #e6e6e6;
+    align-self: center;
+}
+
+button {
+    width: 35%;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+button:hover {
+    filter: brightness(.75);
+}
+

@@ -1,0 +1,51 @@
+<html lang="en"></html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../../res/images/icon.ico" />
+  <link rel="stylesheet" href="../../res/css/style.css" />
+  <link rel="stylesheet" href="../../res/css/addPost.css" />
+  <title>addPost - CSS</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <ul>
+      <li>
+        <a class="root" href="../../../index.html">Home</a>
+      </li>
+    </ul>
+    <a class="logo" href="./login.html"
+      ><img
+        src="../../res/images/icon.ico"
+        width="50"
+        height="50"
+        alt="My logo"
+    /></a>
+  </nav>
+
+  <main class="plane">
+    <form class="card" action="../../../index.html" method="get">
+      <div class="row">
+        <label for="textbox">Post body</label>
+        <textarea
+          id="textbox"
+          name="textbox"
+          rows="5"
+          placeholder="textarea"
+        ></textarea>
+      </div>
+
+      <div class="row">
+        <label for="file">Select file</label>
+        <input id="file" type="file" disabled />
+      </div>
+
+      <div id="actions">
+        <button type="submit">Create post</button>
+      </div>
+    </form>
+  </main>
+</body>
