@@ -1,6 +1,10 @@
 window.onload = function(){
-//https://c58414.websec.ee/posts.json
-    fetch('https://temp.staticsave.com/68f8b2d0115c8.json')
+
+    //we uploaded the file to staticsave where it was deployed and accessible
+    //fetch('https://temp.staticsave.com/68f8b2d0115c8.json')
+
+    //with local file:
+    fetch('./res/posts/posts.json')
         .then((response) => response.json())
         .then(json => {
             console.log(json);
