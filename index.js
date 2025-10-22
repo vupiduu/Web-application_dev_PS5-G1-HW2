@@ -44,10 +44,6 @@ window.onload = function(){
                 divPostActions.appendChild(likeButton);
 
 
-                let heading = document.createElement("h3");
-                heading.innerText = element.title;
-                let content = document.createElement("p");
-                content.innerHTML = element.body;
                 divPost.appendChild(divPostHeader);
                 divPost.appendChild(divPostUserInfo);
                 divPost.appendChild(divPostDescription);
