@@ -59,4 +59,20 @@ window.onload = function(){
         }).catch(err => {
             console.log(err);
     });
+
+    const profilePic = document.getElementById('profile-container');
+    const userInfoDropdown = document.getElementById('userInfoDropdown');
+
+    profilePic.addEventListener("click", () => {
+        userInfoDropdown.style.display = 'block';
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.addEventListener("click", (event) => {
+    if (!event.target.closest(".profile-container")) {
+        userInfoDropdown.style.display = "none";
+    }
+    });
 }
+
+
