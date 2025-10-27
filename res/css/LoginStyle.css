@@ -1,20 +1,3 @@
-@media (max-width: 430px) {
-    /*Nav config for smartphones */
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-@media (min-width: 431px) {
-    /*Nav config for desktops */
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
 .center-wrapper {
     display: flex;
     justify-content: center;
