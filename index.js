@@ -76,8 +76,11 @@ window.onload = function(){
     });
 
     const logoutBtn = document.getElementById('logoutBtn');
+    const base = window.location.pathname.includes("Web-application_dev_PS5-G1-HW2")? 
+    "/Web-application_dev_PS5-G1-HW2/" : "/";
+
     logoutBtn.addEventListener("click", () => {
-        window.location = "/src/html/login.html";
+        window.location = base + "src/html/login.html";
     });
 
 }
