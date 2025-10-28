@@ -47,10 +47,21 @@
     background-color: #00aaff;
     justify-content: space-between;
     align-items: center;
+    margin: 10px;
+    margin-top: 0px;
 }
 /* padding around the icon */
 ul + a {
     padding: 5px;
+}
+
+.logo {
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Avatar paremale (sinu pilt) */
@@ -60,6 +71,10 @@ ul + a {
     border: 2px solid #284f79;
     background: #e6e6e6;
     align-self: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
 }
 
 button {
@@ -75,3 +90,52 @@ button:hover {
     filter: brightness(.75);
 }
 
+
+.profile-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 12px;
+}
+
+#userInfoDropdown {
+    position: absolute;
+    top: 67px;
+    right: 0;
+    width: 200px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px;
+    display: none;
+    z-index: 1000;
+}
+
+#userInfoDropdown.show {
+    display: block;
+}
+
+#userInfoDropdown p {
+    margin: 6px 0;
+}
+
+#userInfoDropdown p strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+#userInfoDropdown button {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 8px;
+    background: #284f79;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#userInfoDropdown button:hover {
+    opacity: 0.95;
+}

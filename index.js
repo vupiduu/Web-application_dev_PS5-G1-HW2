@@ -62,6 +62,7 @@ window.onload = function(){
 
     const profilePic = document.getElementById('profile-container');
     const userInfoDropdown = document.getElementById('userInfoDropdown');
+    
 
     profilePic.addEventListener("click", () => {
         userInfoDropdown.style.display = 'block';
@@ -73,6 +74,12 @@ window.onload = function(){
         userInfoDropdown.style.display = "none";
     }
     });
+
+    const logoutBtn = document.getElementById('logoutBtn');
+    logoutBtn.addEventListener("click", () => {
+        window.location = "/src/html/login.html";
+    });
+
 }
 
 
