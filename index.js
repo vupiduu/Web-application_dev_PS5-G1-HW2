@@ -60,29 +60,36 @@ window.onload = function(){
             console.log(err);
     });
 
+    const base = window.location.pathname.includes("Web-application_dev_PS5-G1-HW2")? 
+    "/Web-application_dev_PS5-G1-HW2/" : "/";
+    
     const profilePic = document.getElementById('profile-container');
     const userInfoDropdown = document.getElementById('userInfoDropdown');
     
+    if (profilePic && userInfoDropdown){
+        profilePic.addEventListener("click", () => {
+            userInfoDropdown.style.display = 'block';
+        });
 
-    profilePic.addEventListener("click", () => {
-        userInfoDropdown.style.display = 'block';
-    });
+        // Close the dropdown if the user clicks outside of it
+        window.addEventListener("click", (event) => {
+        if (!event.target.closest(".profile-container")) {
+            userInfoDropdown.style.display = "none";
+        }
+        });
 
-    // Close the dropdown if the user clicks outside of it
-    window.addEventListener("click", (event) => {
-    if (!event.target.closest(".profile-container")) {
-        userInfoDropdown.style.display = "none";
+        const logoutBtn = document.getElementById('logoutBtn');
+
+        logoutBtn.addEventListener("click", () => {
+            window.location = base + "src/html/login.html";
+        });
     }
+
+    const profilePic_in_login = document.getElementById('profilePicBtn');
+
+    profilePic_in_login.addEventListener("click", () => {
+        window.location = base + "index.html";
     });
-
-    const logoutBtn = document.getElementById('logoutBtn');
-    const base = window.location.pathname.includes("Web-application_dev_PS5-G1-HW2")? 
-    "/Web-application_dev_PS5-G1-HW2/" : "/";
-
-    logoutBtn.addEventListener("click", () => {
-        window.location = base + "src/html/login.html";
-    });
-
 }
 
 
