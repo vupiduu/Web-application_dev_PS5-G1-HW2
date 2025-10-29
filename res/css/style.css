@@ -80,7 +80,7 @@ body {
 button {
     width: 35%;
     padding: 8px;
-    margin-top: 10px;
+    margin: 10px;
     background-color: blue;
     color: white;
     border: none;
